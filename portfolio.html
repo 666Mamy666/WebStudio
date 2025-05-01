@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -12,101 +18,101 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="" class="logo"> <span class="web">web</span>studio</a>
-            <ul class="list">
-                <li class="nav-site-item">Студія</li>
-                <li class="nav-site-item">Портфоліо</li>
-                <li class="nav-site-item">Контакти</li>
-            </ul>
-            <ul>
-                <li class="nav-site-item">info@devstudio.com</li>
-                <li class="nav-site-item">+38 096 111 11 11</li>
-            </ul>
-        </div>
-    </header>
+       <a href="" class="header-logo" > <span class="header-web">Web</span>Studio</a>
+       <ul class="header-pages">
+         <li class="header-page"> <a class="header-link" href="./index.html">Студія</a></li>
+         <li class="header-page"><a class="header-link" href="./portfolio.html">Портфоліо</a></li>
+         <li class="header-page"><a class="header-link" href="#footer">Контакти</a></li>
+       </ul>
+       <ul class="header-list">
+         <li class="header-item"><a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+         <li class="header-item"><a class="header-contact"  href="tel:+380961111111">+38 096 111 11 11</a></li>
+       </ul>
+       </div>
+     </header>
     <main>
-        <section>
+        <section class="chapter">
             <div class="container">
-                <ul>
-                    <li>
-                        <button>Усі</button>
+                <ul class="chapter-list">
+                    <li class="chapter-item">
+                        <button class="chapter-btn">Усі</button>
                     </li>
-                    <li>
-                        <button>Веб-сайти</button>
+                    <li class="chapter-item">
+                        <button class="chapter-btn">Веб-сайти</button>
                     </li>
+                    <li class="chapter-item">
+                        <button class="chapter-btn">Додатки</button>
+                    </li class="chapter-item">
                     <li>
-                        <button>Додатки</button>
-                    </li>
+                        <button class="chapter-btn">Дизайн</button>
+                    </li class="chapter-item">
                     <li>
-                        <button>Дизайн</button>
-                    </li>
-                    <li>
-                        <button>Маркетинг</button>
-                    </li>
+                        <button class="chapter-btn">Маркетинг</button>
+                    </li class="chapter-item">
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="posters">
             <div class="container">
-                <ul>
-                    <li>
-                        <img src="/img/Технокряк.png" alt="">
-                        <h4>Технокряк</h4>
-                        <p>Веб-сайт</p>
+                <ul class="posters-list">
+                    <li class="posters-item">
+                        <img src="./img/poster1.png" alt="ноутбук">
+                        <h4  class="posters-text" >Технокряк</h4>
+                        <p class="posters-subtext">Веб-сайт</p>
                     </li>
-                    <li>
-                        <img src="/img/Постер New Orlean vs Golden Star.png" alt="">
-                        <h4>Постер New Orlean vs Golden Star</h4>
-                        <p>Дизайн</p>
+                    <li class="posters-item">
+                        <img class="posters-photo" src="./img/poster2.png" alt="Постер New Orlean vs Golden Star">
+                        <h4 class="posters-text" >Постер New Orlean vs Golden Star</h4>
+                        <p class="posters-subtext">Дизайн</p>
                     </li>
-                    <li>
-                        <img src="/img/Ресторан Seafood.png" alt="">
-                        <h4>Ресторан Seafood</h4>
-                        <p>Додаток</p>
+                    <li class="posters-item">
+                        <img  class="posters-photo" src="./img/poster3.png" alt="Ресторан Seafood">
+                        <h4 class="posters-text">Ресторан Seafood</h4>
+                        <p class="posters-subtext">Додаток</p>
                     </li>
-                    <li>
-                        <img src="/img/Проєкт Prime.png" alt="">
-                        <h4>Проєкт Prime</h4>
-                        <p>Маркетинг</p>
+                    <li class="posters-item">
+                        <img  class="posters-photo" src="./img/poster4.png" alt="Проєкт Prime">
+                        <h4 class="posters-text">Проєкт Prime</h4>
+                        <p class="posters-subtext">Маркетинг</p>
                     </li>
+                    <li class="posters-item">
+                        <img  class="posters-photo" src="./img/poster5.png" alt="Проєкт Boxes">
+                        <h4 class="posters-text">Проєкт Boxes</h4>
+                        <p class="posters-subtext">Додаток</p>
                     <li>
-                        <img src="/img/Проєкт Boxes.png" alt="">
-                        <h4>Проєкт Boxes</h4>
-                        <p>Додаток</p>
-                    <li>
-                        <img src="/img/Inspiration has no Borders.png" alt="">
-                        <h4>Inspiration has no Borders</h4>
-                        <p>Веб-сайт</p>
+                        <img  class="posters-photo" src="./img/poster6.png" alt="Inspiration has no Borders">
+                        <h4 class="posters-text">Inspiration has no Borders</h4>
+                        <p class="posters-subtext">Веб-сайт</p>
                     </li>
-                    <li>
-                        <img src="img/Видання Limited Edition.png" alt="">
-                        <h4>Видання Limited Edition</h4>
-                        <p>Дизайн</p>
+                    <li class="posters-item">
+                        <img  class="posters-photo" src="./img/poster7.png" alt="Видання Limited Edition">
+                        <h4 class="posters-text">Видання Limited Edition</h4>
+                        <p class="posters-subtext">Дизайн</p>
                     </li>
-                    <li>
-                        <img src="img/Проєкт LAB.png" alt="">
-                        <h4>Проєкт LAB</h4>
-                        <p>Маркетинг</p>
+                    <li class="posters-item">
+                        <img  class="posters-photo" src="./img/poster8.png" alt="Проєкт LAB">
+                        <h4 class="posters-text">Проєкт LAB</h4>
+                        <p class="posters-subtext">Маркетинг</p>
                     </li>
-                    <li>
-                        <img src="img/Growing Business.png" alt="">
-                        <h4>Growing Business</h4>
-                        <p>Додаток</p>
+                    <li class="posters-item">
+                        <img  class="posters-photo" src="./img/poster9.png" alt="Growing Business">
+                        <h4 class="posters-text">Growing Business</h4>
+                        <p class="posters-subtext">Додаток</p>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer class="hero">
+    <footer id="footer" class="footer">
         <div class="container">
-            <a href="" class="logo-two"> <span class="web">web</span>studio</a>
-            <ul>
-                <li class="white-text">м. Київ, пр-т Лесі Українки, 26</li>
-                <li class="white-text">info@devstudio.com</li>
-                <li class="white-text">+38 096 111 11 11</li>
-            </ul>
+          <a href="" class="footer-logo"> <span class="web">web</span>studio</a>
+          <a class="footer-adress" href="">м. Київ, пр-т Лесі Українки, 26</a>
+          <ul class="footer-list">
+            <li class="footer-text">info@devstudio.com</li>
+            <li class="footer-text">+38 096 111 11 11</li>
+          </ul>
         </div>
-    </footer>
+      </footer>
 </body>
 
 </html>
