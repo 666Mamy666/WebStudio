@@ -31,6 +31,11 @@ body {
     padding-bottom: 25px;
 }
 
+.header-nav {
+    display: flex;
+}
+
+
 .header-logo {
     color: var(--webstudio-color);
     font-family: Raleway;
@@ -47,6 +52,20 @@ body {
 
 .header-web {
     color: var(--decorative-color);
+}
+
+.header-pages {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 344px;
+    align-items: center;
 }
 
 .header-link:hover {
@@ -82,6 +101,13 @@ body {
     padding-bottom: 200px;
 }
 
+.hero-container {
+    display: flex;
+    outline: solid green;
+    max-width: 696px;
+    flex-wrap: wrap;
+}
+
 .hero-title {
     color: var(--text-color);
     text-align: center;
@@ -102,11 +128,17 @@ body {
     border-radius: 4px;
     background: var(--decorative-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 216px;
+    height: 50px;
+    flex-shrink: 0;
+
 }
-.warning{
+
+.warning {
     padding-top: 94px;
     padding-bottom: 118px;
 }
+
 .warning-subtitle {
     color: var(--background-color);
     font-weight: 700;
@@ -121,9 +153,10 @@ body {
     letter-spacing: 0.42px;
 }
 
-.occupation{
+.occupation {
     padding-bottom: 94px;
 }
+
 .occupation-title {
     color: var(--background-color);
     text-align: center;
@@ -132,10 +165,11 @@ body {
     letter-spacing: 1.08px;
 }
 
-.team{
+.team {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .team-title {
     color: var(--subtitle-color);
     text-align: center;
@@ -159,11 +193,28 @@ body {
     font-weight: 400;
     letter-spacing: 0.48px;
 }
-.footer{
+
+.footer {
     background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+.footer-box{
+    display: flex;
+    max-width: 231px;
+    outline: green;
+
+}
+.footer-list{
+    display: flex;
+}
+
 .footer-logo {
     color: var(--text-color);
     font-family: Raleway;
@@ -198,10 +249,12 @@ body {
     line-height: 24px;
     letter-spacing: 0.42px;
 }
-.chapter{
+
+.chapter {
     padding-top: 94px;
     padding-bottom: 50px;
 }
+
 .chapter-btn {
     color: var(--subtitle-color);
     text-align: center;
@@ -219,20 +272,23 @@ body {
     color: var(--text-color);
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
-.posters{
+
+.posters {
     padding-bottom: 94px;
 }
-.posters-subtext{
+
+.posters-subtext {
     color: var(--decorative-color-two);
-font-size: 16px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0.48px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
 }
-.posters-text{
+
+.posters-text {
     color: var(--subtitle-color);
-font-size: 18px;
-font-weight: 700;
-line-height: 36px;
-letter-spacing: 1.08px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.08px;
 }
