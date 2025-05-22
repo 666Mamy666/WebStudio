@@ -131,14 +131,20 @@ body {
     width: 216px;
     height: 50px;
     flex-shrink: 0;
-
+    display: block;
+    margin-right: 240px;
+    margin-left: 240px;
+    margin-top: 30px;
 }
 
 .warning {
     padding-top: 94px;
     padding-bottom: 118px;
 }
-
+.warning-list{
+    display: flex;
+    gap: 30px;
+}
 .warning-subtitle {
     color: var(--background-color);
     font-weight: 700;
@@ -163,6 +169,15 @@ body {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    padding-bottom: 30px;
+}
+.occupation-list{
+    display: flex;
+    gap: 30px;
+}
+.occupation-photo{
+    display: block;
+    width: 370px;
 }
 
 .team {
@@ -176,6 +191,14 @@ body {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+.team-list{
+    display: flex;
+    gap: 30px;
+}
+.team-peuple{
+    width: 270px;
 }
 
 .team-name {
@@ -209,10 +232,12 @@ body {
     display: flex;
     max-width: 231px;
     outline: green;
+    flex-wrap: wrap;
 
 }
 .footer-list{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -223,6 +248,7 @@ body {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
+    margin-bottom: 20px;
 }
 
 .web {
@@ -254,6 +280,11 @@ body {
     padding-top: 94px;
     padding-bottom: 50px;
 }
+.chapter-list{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
 
 .chapter-btn {
     color: var(--subtitle-color);
@@ -264,6 +295,10 @@ body {
     letter-spacing: 0.48px;
     border-radius: 4px;
     background: var(--background-color-two);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 .chapter-btn:hover {
@@ -274,7 +309,15 @@ body {
 }
 
 .posters {
-    padding-bottom: 94px;
+    padding-bottom: 64px;
+}
+.posters-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.posters-item{
+padding-bottom: 30px;
 }
 
 .posters-subtext {
