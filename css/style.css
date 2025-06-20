@@ -346,6 +346,7 @@ body {
     padding-bottom: 30px;
     border: 1px solid #EEE;
     max-width: 370px;
+    padding-bottom: 20px;
 }
 
 .posters-photo {
@@ -369,4 +370,5 @@ body {
     letter-spacing: 1.08px;
     padding-left: 24px;
     margin-bottom: 4px;
+    margin-top: 20px;
 }
