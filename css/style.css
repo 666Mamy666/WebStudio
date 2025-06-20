@@ -17,7 +17,6 @@ li {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: solid red;
 
 }
 
@@ -103,7 +102,6 @@ body {
 
 .hero-container {
     display: flex;
-    outline: solid green;
     max-width: 696px;
     flex-wrap: wrap;
 }
@@ -252,7 +250,6 @@ body {
 .footer-box {
     display: flex;
     max-width: 231px;
-    outline: green;
     flex-wrap: wrap;
 
 }
