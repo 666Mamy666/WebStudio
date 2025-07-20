@@ -52,6 +52,12 @@ body {
 .header-web {
     color: var(--decorative-color);
 }
+.header-container{
+    border-bottom: solid #ECECEC;
+    padding-bottom: 56px;
+    height: 1px;
+
+}
 
 .header-pages {
     display: flex;
@@ -96,6 +102,7 @@ body {
 
 .hero {
     background-color: var(--background-color);
+    background-image: url(../img/hero-bg.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
 }
