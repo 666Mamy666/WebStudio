@@ -102,7 +102,7 @@ body {
 
 .hero {
     background-color: var(--background-color);
-    background-image: url(../img/hero-bg.jpg);
+    background-image: linear-gradient(to left,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -140,6 +140,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .warning {
@@ -388,6 +389,7 @@ margin-bottom: 30px;
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+    cursor: pointer;
 }
 
 .chapter-btn:hover {
