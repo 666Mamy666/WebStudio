@@ -690,8 +690,7 @@ justify-content: center;
   border-radius: 4px;
   background-color: var(--text-color);
   position: relative; 
-  padding-top: 40px;
-  padding-bottom: 40px;
+   padding: 40px;
   
 }
 .modal-icon {
@@ -733,20 +732,29 @@ fill: var(--decorative-color);
   letter-spacing: 1%;
   color: var(--decorative-color-two);
   margin-bottom: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  outline: solid red;
+  margin-bottom: 10px;
 }
 .modal-form {
   display: flex;
   flex-direction: column;
-  padding-left: 27px;
+
+  outline: solid yellow;
 }
 .modal-placeholder {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border-width: 1px;
   opacity: 1;
   border-radius: 4px;
-  margin-bottom: 10px;
   border-color: solid var(--decorative-color-two);
+   margin-top: 4px;
+  display: block;
+  box-sizing: border-box;
+  padding-left: 48px;
 }
 .modal-desire {
   width: 448px;
@@ -774,17 +782,10 @@ fill: var(--decorative-color);
   width: 18px;
   height: 18px;
   position: absolute;
-  left: 52px;
+  left: 12px;
+  bottom: 11px;
 }
-.modal-person{
-top: 104px;
-}
-.modal-tel{
-top: 172px;
-}
-.modal-email{
-top: 240px;
-}
+
 .modal-span {
   font-weight: 400;
   font-size: 14px;
