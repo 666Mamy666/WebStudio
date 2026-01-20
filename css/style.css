@@ -762,14 +762,11 @@ fill: var(--decorative-color);
   position: relative;
   display: flex;
   flex-direction: column;
-  outline: solid red;
   margin-bottom: 10px;
 }
 .modal-form {
   display: flex;
   flex-direction: column;
-
-  outline: solid yellow;
 }
 .modal-placeholder {
   width: 100%;
