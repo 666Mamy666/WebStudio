@@ -779,10 +779,15 @@ body {
   opacity: 0;
   pointer-events: none;
   z-index: 3;
+  transition-property: opacity;
+  transition-duration: 250ms;
 }
 .is-hidden {
   opacity: 1;
   pointer-events: auto;
+}
+.backdrop.is-hidden .modal{
+transform: scale(1);
 }
 .modal {
   width: 528px;
@@ -793,6 +798,9 @@ body {
   position: relative;
   padding: 40px;
   z-index: 5;
+   transform: scale(0.2) rotate(0deg);
+ transition-property: transform;
+ transition-duration: 1s;
 }
 .modal-icon {
   fill: var(--webstudio-color);
