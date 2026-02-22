@@ -6,6 +6,7 @@
   --decorative-color-two: #757575;
   --webstudio-color: #000000;
   --subtitle-color: #212121;
+  --icon-color: #AFB1B8;
 }
 html{
   scroll-behavior: smooth;
@@ -49,6 +50,16 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-decoration: none;
+  animation-name: move-logo;
+  animation-duration: 1.5s;
+}
+@keyframes move-logo{
+  0%{
+transform: translate(0, -100px);
+  }
+  100%{
+transform: translate(0, 0);
+  }
 }
 
 .header-web {
@@ -111,10 +122,10 @@ body {
 }
 
 @keyframes underline-slide {
-  from {
+  0% {
     transform: scaleX(0);
   }
-  to {
+  100% {
     transform: scaleX(1);
   }
 }
@@ -129,6 +140,9 @@ body {
   fill: var(--decorative-color-two);
   width: 16px;
   height: 12px;
+   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item:hover .header-icon {
@@ -140,6 +154,7 @@ body {
 .header-svg {
   width: 10px;
   height: 16px;
+
 }
 .header-link {
   color: var(--background-color);
@@ -210,6 +225,19 @@ body {
   margin-left: auto;
   margin-top: 30px;
   cursor: pointer;
+  animation-name: move-btn;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes move-btn{ 
+0%{
+transform: scale(1, 1);
+}
+100%{
+transform: scale(1.1, 1.1);
+}
 }
 .warning {
   padding-top: 94px;
@@ -404,7 +432,7 @@ body {
 .team-icon {
   width: 20px;
   height: 20px;
-  fill: var(--decorative-color-two);
+  fill: var(--icon-color);
    transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -449,13 +477,13 @@ body {
 .customers-svg {
   width: 106px;
   height: 60px;
-  fill: var(--decorative-color-two);
+  fill: var(--icon-color);
    transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-item {
-  border: 1px solid #eee;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
   padding-left: 32px;
   padding-right: 32px;
