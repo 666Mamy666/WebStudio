@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -77,15 +78,15 @@
       <div class="container">
         <h2 class="occupation-title">Чим ми займаємося</h2>
         <ul class="occupation-list">
-          <li class="occupation-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="occupation-item">
             <img class="occupation-photo" src="./img/computer.png" alt="компютер">
             <p class="occupation-text">Десктопні додатки</p>
           </li>
-          <li class="occupation-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="occupation-item">
             <img class="occupation-photo" src="./img/laptop.png" alt="ноутбук">
             <p class="occupation-text">Мобільні додатки</p>
           </li>
-          <li class="occupation-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="occupation-item">
             <img class="occupation-photo" src="img/graphics-tablet.png" alt="графічний планшет">
             <p class="occupation-text">Дизайнерські рішення</p>
           </li>
@@ -96,7 +97,7 @@
       <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
-          <li class="team-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="team-item">
             <img class="team-peuple" src="img/igor-demyanenko.jpg" alt="">
             <div class="team-info">
               <h4 class="team-name">Ігор Дем'яненко</h4>
@@ -133,7 +134,7 @@
               </ul>
             </div>
           </li>
-          <li class="team-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="team-item">
             <img class="team-peuple" src="img/olga-repina.jpg" alt="">
             <div class="team-info">
               <h4 class="team-name">Ольга Рєпіна</h4>
@@ -170,7 +171,7 @@
               </ul>
             </div>
           </li>
-          <li class="team-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="team-item">
             <img class="team-peuple" src="img/mykola-tarasov.jpg" alt="">
             <div class="team-info">
               <h4 class="team-name">Микола Тарасов</h4>
@@ -207,7 +208,7 @@
               </ul>
             </div>
           </li>
-          <li class="team-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="team-item">
             <img class="team-peuple" src="./img/mykhailo-yermakov.jpg" alt="">
             <div class="team-info">
               <h4 class="team-name">Михайло Єрмаков</h4>
@@ -251,42 +252,42 @@
       <div class="container">
         <h2 class="customers-title">Постійні клієнти</h2>
         <ul class="customers-list">
-          <li class="customers-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="customers-item">
             <a class="customers-link" href="#">
               <svg class="customers-svg">
                 <use href="./img/symbol-defs.svg#icon-ya-co"></use>
               </svg>
             </a>
           </li>
-          <li class="customers-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="customers-item">
             <a class="customers-link" href="#">
               <svg class="customers-svg">
                 <use href="./img/symbol-defs.svg#icon-company-tagline"></use>
               </svg>
             </a>
           </li>
-          <li class="customers-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="customers-item">
             <a class="customers-link" href="#">
               <svg class="customers-svg">
                 <use href="./img/symbol-defs.svg#icon-company"></use>
               </svg>
             </a>
           </li>
-          <li class="customers-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="customers-item">
             <a class="customers-link" href="#">
               <svg class="customers-svg">
                 <use href="./img/symbol-defs.svg#icon-foster-peters"></use>
               </svg>
             </a>
           </li>
-          <li class="customers-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="customers-item">
             <a class="customers-link" href="#">
               <svg class="customers-svg">
                 <use href="./img/symbol-defs.svg#icon-brand"></use>
               </svg>
             </a>
           </li>
-          <li class="customers-item">
+          <li data-aos="fade-up" data-aos-mirror="true" class="customers-item">
             <a class="customers-link" href="#">
               <svg class="customers-svg">
                 <use href="./img/symbol-defs.svg#icon-tagline"></use>
@@ -411,6 +412,10 @@
     </div>
   </div>
   <script src="./js/modal.js" type="module"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
