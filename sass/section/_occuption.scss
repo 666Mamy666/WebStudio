@@ -1,0 +1,40 @@
+.occupation {
+    padding-bottom: 94px;
+}
+
+.occupation-title {
+    color: var(--background-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-bottom: 30px;
+}
+
+.occupation-list {
+    display: flex;
+    gap: 30px;
+}
+
+.occupation-photo {
+    display: block;
+    width: 370px;
+}
+
+.occupation-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: var(--text-color);
+    background-color: rgba(47, 48, 58, 80%);
+    width: 370px;
+    height: 70px;
+    opacity: 1;
+    position: relative;
+    bottom: 70px;
+}

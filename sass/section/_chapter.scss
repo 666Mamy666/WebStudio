@@ -1,0 +1,49 @@
+.chapter {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.chapter-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.chapter-btn {
+    color: var(--subtitle-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    background: var(--background-color-two);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    cursor: pointer;
+    transition-property: background-color color box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chapter-btn:hover {
+    border-radius: 4px;
+    background-color: var(--decorative-color);
+    color: var(--text-color);
+    box-shadow:
+        0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.chapter-btn:focus {
+    border-radius: 4px;
+    background: var(--decorative-color);
+    color: var(--text-color);
+    box-shadow:
+        0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}

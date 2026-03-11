@@ -1,0 +1,17 @@
+@use"./base/common";
+@use"./base/reset ";
+@use"./base/container";
+@use"./base/var";
+@use"./section/header";
+@use"./section/hero";
+@use"./section/warning";
+@use"./section/occuption";
+@use"./section/team";
+@use"./section/customers";
+@use"./section/footer";
+@use"./section/chapter";
+@use"./section/posters";
+@use"./section/hero";
+body{
+    background: red;
+}
