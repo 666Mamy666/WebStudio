@@ -1,5 +1,6 @@
+@use "../base/var" as *;
 .footer {
-    background-color: var(--background-color);
+    background-color: $background-color;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -27,7 +28,7 @@
 }
 
 .footer-logo {
-    color: var(--text-color);
+    color: $text-color;
     font-family: Raleway;
     font-size: 26px;
     font-style: normal;
@@ -38,7 +39,7 @@
 }
 
 .web {
-    color: var(--decorative-color);
+    color: $decorative-color;
     font-family: Raleway;
     font-size: 26px;
     font-style: normal;
@@ -60,7 +61,7 @@
 }
 
 .footer-adress {
-    color: var(--text-color);
+    color: $text-color;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
@@ -76,7 +77,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--decorative-color-two);
+    background-color: $decorative-color-two;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -94,30 +95,30 @@
 .footer-icon {
     width: 20px;
     height: 20px;
-    fill: var(--background-color-two);
+    fill: $background-color-two;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-element:hover {
-    background-color: var(--decorative-color);
+    background-color: $decorative-color;
 }
 
 .footer-element:focus-within {
-    background-color: var(--decorative-color);
+    background-color: $decorative-color;
 }
 
 .footer-element:hover .footer-icon {
-    fill: var(--text-color);
+    fill: $text-color;
 }
 
 .footer-element :focus-within .footer-icon {
-    background-color: var(--decorative-color);
+    background-color: $decorative-color;
 }
 
 .footer-title {
-    color: var(--text-color);
+    color: $text-color;
     width: 116px;
     font-size: 14px;
     text-transform: uppercase;
@@ -125,7 +126,7 @@
 }
 
 .footer-icon:hover {
-    background-color: var(--decorative-color);
+    background-color: $decorative-color;
 }
 
 .footer-label {
@@ -156,8 +157,8 @@
     letter-spacing: 6%;
     text-align: center;
     vertical-align: middle;
-    background-color: var(--decorative-color);
-    color: var(--text-color);
+    background-color: $decorative-color;
+    color: $text-color;
     margin-left: 12px;
     margin-top: 34px;
     display: flex;
@@ -168,7 +169,7 @@
 .footer-svg {
     width: 24px;
     height: 24px;
-    fill: var(--text-color);
+    fill: $text-color;
     margin-left: 10px;
 }
 

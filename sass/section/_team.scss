@@ -1,3 +1,4 @@
+@use "../base/var" as *;
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -10,7 +11,7 @@
 }
 
 .team-title {
-    color: var(--subtitle-color);
+    color: $subtitle-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -24,7 +25,7 @@
 }
 
 .team-item {
-    background-color: var(--text-color);
+    background-color: $text-color;
 }
 
 .team-peuple {
@@ -32,7 +33,7 @@
 }
 
 .team-name {
-    color: var(--subtitle-color);
+    color: $subtitle-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -41,7 +42,7 @@
 }
 
 .team-text {
-    color: var(--decorative-color-two);
+    color: $decorative-color-two;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -71,24 +72,24 @@
 .team-icon {
     width: 20px;
     height: 20px;
-    fill: var(--icon-color);
+    fill: $icon-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover {
-    background-color: var(--decorative-color);
+    background-color: $decorative-color;
 }
 
 .team-link:focus {
-    background-color: var(--decorative-color);
+    background-color: $decorative-color;
 }
 
 .team-link:hover .team-icon {
-    fill: var(--text-color);
+    fill: $text-color;
 }
 
 .team-link:focus .team-icon {
-    fill: var(--text-color);
+    fill: $text-color;
 }

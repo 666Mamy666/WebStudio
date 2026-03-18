@@ -1,3 +1,4 @@
+@use "../base/var" as *;
 .customers-title {
     font-weight: 700px;
     font-size: 36px;
@@ -23,14 +24,14 @@
 .customers-svg {
     width: 106px;
     height: 60px;
-    fill: var(--icon-color);
+    fill: $icon-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item {
-    border: 1px solid var(--icon-color);
+    border: 1px solid $icon-color;
     border-radius: 4px;
     padding-left: 32px;
     padding-right: 32px;
@@ -42,17 +43,17 @@
 }
 
 .customers-item:hover {
-    border: 1px solid var(--decorative-color);
+    border: 1px solid $decorative-color;
 }
 
 .customers-item:focus-within {
-    border: 1px solid var(--decorative-color);
+    border: 1px solid $decorative-color;
 }
 
 .customers-item:hover .customers-svg {
-    fill: var(--decorative-color);
+    fill: $decorative-color;
 }
 
 .customers-item:focus-within .customers-svg {
-    fill: var(--decorative-color);
+    fill: $decorative-color;
 }

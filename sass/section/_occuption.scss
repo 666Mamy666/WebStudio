@@ -1,9 +1,10 @@
+@use "../base/var" as *;
 .occupation {
     padding-bottom: 94px;
 }
 
 .occupation-title {
-    color: var(--background-color);
+    color: $background-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -30,7 +31,7 @@
     line-height: 100%;
     letter-spacing: 3%;
     text-transform: uppercase;
-    color: var(--text-color);
+    color: $text-color;
     background-color: rgba(47, 48, 58, 80%);
     width: 370px;
     height: 70px;
