@@ -1,159 +1,4 @@
-// @use "../base/var" as *;
-// .header {
-//   padding-top: 24px;
-//   padding-bottom: 25px;
-
-//   &__nav {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//   }
-//   &__wrapper {
-//     display: flex;
-//     gap: 93px;
-//   }
-//   &__logo {
-//     color: $webstudio-color;
-//     font-family: Raleway;
-//     font-size: 26px;
-//     font-weight: 700;
-//     line-height: 30.52px;
-//     letter-spacing: 0.03em;
-//     text-align: left;
-//     text-underline-position: from-font;
-//     text-decoration-skip-ink: none;
-//     text-decoration: none;
-//     animation-name: move-logo;
-//     animation-duration: 1.5s;
-//   }
-//   &__web {
-//     color: $decorative-color;
-//   }
-//   &__pages {
-//     display: flex;
-//     gap: 50px;
-//     align-items: center;
-//   }
-//   &__link {
-//     position: relative;
-//     transition-property: color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//      color: $background-color;
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: 500;
-//   line-height: normal;
-//   letter-spacing: 0.28px;
-// }
-
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       left: 0;
-//       bottom: -32px;
-//       width: 100%;
-//       height: 4px;
-//       border-radius: 2px;
-//       background-color: $decorative-color;
-
-//       transform: scaleX(0);
-//       transform-origin: left;
-//     }
-
-//     &.current::after {
-//       animation: underline-slide 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
-//     }
-
-//     &:hover {
-//       color: $decorative-color;
-//     }
-
-//     &:focus {
-//       color: $decorative-color;
-//     }
-//   }
-//   &__list {
-//     display: flex;
-//     gap: 50px;
-//     align-items: center;
-//   }
-
-//   &__item {
-//     display: flex;
-//     gap: 10px;
-//     align-items: center;
-//     justify-content: center;
-
-//     &:hover &__icon {
-//       fill: $decorative-color;
-//     }
-
-//     &:focus-within &-icon {
-//       fill: $decorative-color;
-//     }
-//   }
-//   &__icon {
-//     fill: $background-color;
-//     width: 16px;
-//     height: 12px;
-//     transition-property: fill;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-//   &__svg {
-//   width: 10px;
-//   height: 16px;
-// }
-//   &__contact {
-//     color: $decorative-color-two;
-//     font-family: Roboto;
-//     font-style: normal;
-//     font-weight: 500;
-//     line-height: normal;
-//     letter-spacing: 0.28px;
-//     transition-property: color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-//     &:hover {
-//       color: $decorative-color;
-//     }
-//     &:focus {
-//       color: $decorative-color;
-//     }
-//   }
-
-// // .header-container {
-// //   border-bottom: solid #ececec;
-// //   padding-bottom: 56px;
-// //   height: 1px;
-// // }
-
-
-// @keyframes move-logo {
-//   0% {
-//     transform: translate(0, -100px);
-//   }
-
-//   100% {
-//     transform: translate(0, 0);
-//   }
-// }
-
-// @keyframes underline-slide {
-//   0% {
-//     transform: scaleX(0);
-//   }
-
-//   100% {
-//     transform: scaleX(1);
-//   }
-// }
-    
-
 @use "../base/var" as *;
-
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -163,12 +8,10 @@
     align-items: center;
     justify-content: space-between;
   }
-
   &__wrapper {
     display: flex;
     gap: 93px;
   }
-
   &__logo {
     color: $webstudio-color;
     font-family: Raleway;
@@ -176,35 +19,33 @@
     font-weight: 700;
     line-height: 30.52px;
     letter-spacing: 0.03em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
     text-decoration: none;
-
-    animation: move-logo 1.5s;
+    animation-name: move-logo;
+    animation-duration: 1.5s;
   }
-
   &__web {
     color: $decorative-color;
   }
-
   &__pages {
     display: flex;
     gap: 50px;
     align-items: center;
   }
-
   &__link {
     position: relative;
-
-    color: $background-color;
-    font-family: Roboto;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      color: $decorative-color;
-    }
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     color: $background-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
 
     &::after {
       content: "";
@@ -223,8 +64,15 @@
     &.current::after {
       animation: underline-slide 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
-  }
 
+    &:hover {
+      color: $decorative-color;
+    }
+
+    &:focus {
+      color: $decorative-color;
+    }
+  }
   &__list {
     display: flex;
     gap: 50px;
@@ -235,56 +83,64 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 
-    &:hover .header__icon {
+    &:hover &__icon {
       fill: $decorative-color;
     }
 
-    &:focus-within .header__icon {
+    &:focus-within &-icon {
       fill: $decorative-color;
     }
   }
-
   &__icon {
     fill: $background-color;
     width: 16px;
     height: 12px;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-
   &__svg {
-    width: 10px;
-    height: 16px;
-  }
-
+  width: 10px;
+  height: 16px;
+}
   &__contact {
     color: $decorative-color-two;
     font-family: Roboto;
+    font-style: normal;
     font-weight: 500;
+    line-height: normal;
     letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
+    &:hover {
+      color: $decorative-color;
+    }
     &:focus {
       color: $decorative-color;
     }
   }
+
+.header-container {
+  border-bottom: solid #ececec;
+  padding-bottom: 56px;
+  height: 1px;
 }
 
-/* animation logo */
+
 @keyframes move-logo {
   0% {
-    transform: translateY(-100px);
+    transform: translate(0, -100px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(0, 0);
   }
 }
 
-/* animation underline */
 @keyframes underline-slide {
   0% {
     transform: scaleX(0);
@@ -294,3 +150,5 @@
     transform: scaleX(1);
   }
 }
+    
+

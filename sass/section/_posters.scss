@@ -1,15 +1,14 @@
 @use "../base/var" as *;
 .posters {
-    padding-bottom: 64px;
-}
+  padding-bottom: 64px;
 
-.posters-list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
+  }
 
-.posters-item {
+  &__item {
     padding-bottom: 30px;
     border: 1px solid #eee;
     max-width: 370px;
@@ -17,21 +16,19 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.posters-item:hover {
-    box-shadow:
+    &:hover {
+      box-shadow:
         0px 3px 1px 0px rgba(0, 0, 0, 0.1),
         0px 1px 2px 0px rgba(0, 0, 0, 0.08),
         0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-}
-
-.posters-thumb {
-    position: relative;
-    overflow: hidden;
-}
-
-.posters-overlay {
+    }
+    &:hover &__overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  &__overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -44,35 +41,15 @@
     padding-bottom: 63px;
     padding-left: 24px;
     padding-right: 24px;
-}
-
-.posters-item:hover .posters-overlay {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.posters-overlay-text {
+  }
+  &__overlaytext {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 3%;
     color: $text-color;
-}
-
-.posters-photo {
-    width: 370px;
-}
-
-.posters-subtext {
-    color: $decorative-color-two;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.48px;
-    padding-left: 24px;
-}
-
-.posters-text {
+  }
+  &__text {
     color: $subtitle-color;
     font-size: 18px;
     font-weight: 700;
@@ -81,4 +58,20 @@
     padding-left: 24px;
     margin-bottom: 4px;
     margin-top: 20px;
+  }
+  &__subtext {
+    color: $decorative-color-two;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    padding-left: 24px;
+  }
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  &__photo {
+    width: 370px;
+  }
 }

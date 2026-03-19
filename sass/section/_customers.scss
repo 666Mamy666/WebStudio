@@ -1,36 +1,21 @@
 @use "../base/var" as *;
-.customers-title {
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
     font-weight: 700px;
     font-size: 36px;
     line-height: 100%;
     letter-spacing: 3%;
     text-align: center;
-}
-
-.customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.customers-title {
     margin-bottom: 50px;
-}
-
-.customers-list {
+  }
+  &__list {
     display: flex;
     gap: 30px;
-}
-
-.customers-svg {
-    width: 106px;
-    height: 60px;
-    fill: $icon-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers-item {
+  }
+  &__item {
     border: 1px solid $icon-color;
     border-radius: 4px;
     padding-left: 32px;
@@ -40,20 +25,29 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.customers-item:hover {
-    border: 1px solid $decorative-color;
-}
+    &:hover {
+      border: 1px solid $decorative-color;
+    }
 
-.customers-item:focus-within {
-    border: 1px solid $decorative-color;
-}
+    &:focus-within {
+      border: 1px solid $decorative-color;
+    }
 
-.customers-item:hover .customers-svg {
-    fill: $decorative-color;
-}
+    &:hover &__svg {
+      fill: $decorative-color;
+    }
 
-.customers-item:focus-within .customers-svg {
-    fill: $decorative-color;
+    &:focus-within &__svg {
+      fill: $decorative-color;
+    }
+  }
+  &__svg {
+    width: 106px;
+    height: 60px;
+    fill: $icon-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

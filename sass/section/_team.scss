@@ -1,62 +1,58 @@
 @use "../base/var" as *;
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #f5f4fa;
-}
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
 
-.team-info {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.team-title {
+  &__title {
     color: $subtitle-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-}
-
-.team-list {
+  }
+  &__list {
     display: flex;
     gap: 30px;
-}
+  }
 
-.team-item {
+  &__item {
     background-color: $text-color;
-}
+  }
 
-.team-peuple {
+  &__peuple {
     width: 270px;
-}
+  }
+  &__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-.team-name {
+  &__name {
     color: $subtitle-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
     margin-bottom: 10px;
-}
+  }
 
-.team-text {
+  &__text {
     color: $decorative-color-two;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
-}
+  }
 
-.team-roster {
+  &__roster {
     margin-top: 16px;
     display: flex;
     gap: 10px;
     justify-content: center;
-}
-
-.team-link {
+  }
+  &__link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -67,29 +63,30 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.team-icon {
+    &:hover {
+      background-color: $decorative-color;
+    }
+
+    &:focus {
+      background-color: $decorative-color;
+    }
+
+    &:hover &__icon {
+      fill: $text-color;
+    }
+
+    &:focus &__icon {
+      fill: $text-color;
+    }
+  }
+
+  &__icon {
     width: 20px;
     height: 20px;
     fill: $icon-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-link:hover {
-    background-color: $decorative-color;
-}
-
-.team-link:focus {
-    background-color: $decorative-color;
-}
-
-.team-link:hover .team-icon {
-    fill: $text-color;
-}
-
-.team-link:focus .team-icon {
-    fill: $text-color;
+  }
 }

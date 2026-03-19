@@ -1,28 +1,25 @@
 @use "../base/var" as *;
 .occupation {
-    padding-bottom: 94px;
-}
+  padding-bottom: 94px;
 
-.occupation-title {
+  &__title {
     color: $background-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
     margin-bottom: 30px;
-}
-
-.occupation-list {
+  }
+  &__list {
     display: flex;
     gap: 30px;
-}
-
-.occupation-photo {
+  }
+  &__photo {
     display: block;
     width: 370px;
-}
+  }
 
-.occupation-text {
+  &__text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,4 +35,5 @@
     opacity: 1;
     position: relative;
     bottom: 70px;
+  }
 }

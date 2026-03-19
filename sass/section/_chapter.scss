@@ -1,16 +1,14 @@
 @use "../base/var" as *;
 .chapter {
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
+  padding-top: 94px;
+  padding-bottom: 50px;
 
-.chapter-list {
+  &__list {
     display: flex;
     justify-content: center;
     gap: 8px;
-}
-
-.chapter-btn {
+  }
+  &__btn {
     color: $subtitle-color;
     text-align: center;
     font-size: 16px;
@@ -27,24 +25,25 @@
     transition-property: background-color color box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.chapter-btn:hover {
+  
+  &:hover {
     border-radius: 4px;
     background-color: $decorative-color;
     color: $text-color;
     box-shadow:
-        0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-}
+      0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  }
 
-.chapter-btn:focus {
+  &:focus {
     border-radius: 4px;
     background: $decorative-color;
     color: $text-color;
     box-shadow:
-        0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+      0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  }
+}
 }
