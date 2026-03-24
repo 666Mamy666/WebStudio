@@ -1,6 +1,6 @@
 @use "../base/var" as *;
 .posters {
-  padding-bottom: 64px;
+  padding-bottom: 94px;
 
   &__list {
     display: flex;
@@ -9,7 +9,6 @@
   }
 
   &__item {
-    padding-bottom: 30px;
     border: 1px solid #eee;
     max-width: 370px;
     padding-bottom: 20px;
@@ -22,10 +21,11 @@
         0px 3px 1px 0px rgba(0, 0, 0, 0.1),
         0px 1px 2px 0px rgba(0, 0, 0, 0.08),
         0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-    }
-    &:hover &__overlay {
-      opacity: 1;
+
+        .posters__overlay{
+   opacity: 1;
       transform: translateY(0);
+        }
     }
   }
   &__overlay {

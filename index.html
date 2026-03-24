@@ -29,16 +29,19 @@
         </div>
         <ul class="header__list">
           <li class="header__item">
-            <svg class="header__icon">
-              <use href="./img/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            <a class="header__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          
+            <a class="header__contact" href="mailto:info@devstudio.com">
+                <svg class="header__icon">
+                  <use href="./img/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
           </li>
           <li class="header__item">
-            <svg class="header__icon header__svg">
+            <a class="header__contact" href="tel:+380961111111">
+              <svg class="header__icon header__svg">
               <use href="./img/symbol-defs.svg#icon-smartphone"></use>
             </svg>
-            <a class="header__contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            +38 096 111 11 11</a> 
           </li>
         </ul>
       </nav>
@@ -391,8 +394,8 @@
           </svg>
         </label>
         <label class="modal__lable">Коментар</label>
-        <input class="modal__desire" type="text" name="" placeholder="Введіть текст" required>
-
+        <!-- <input class="modal__desire" type="text" name="" placeholder="Введіть текст" required> -->
+<textarea placeholder="Введіть текст" class="modal__desire" ></textarea>
         <label class="modal__checkbox">
           <input class="modal__input" type="checkbox">
           Погоджуюся з розсилкою та приймаю <span class="modal__span"> <a class="" chref="#">Умови договору</a> </span>

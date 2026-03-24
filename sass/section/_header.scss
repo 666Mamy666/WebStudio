@@ -13,7 +13,7 @@
     gap: 93px;
   }
   &__logo {
-    color: $webstudio-color;
+    color: $logo-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -39,14 +39,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     color: $background-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-
+    color: $subtitle-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
     &::after {
       content: "";
       position: absolute;
@@ -73,6 +71,7 @@
       color: $decorative-color;
     }
   }
+
   &__list {
     display: flex;
     gap: 50px;
@@ -94,7 +93,7 @@
     }
   }
   &__icon {
-    fill: $background-color;
+    fill: $decorative-color-two;
     width: 16px;
     height: 12px;
     transition-property: fill;
@@ -102,9 +101,9 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__svg {
-  width: 10px;
-  height: 16px;
-}
+    width: 10px;
+    height: 16px;
+  }
   &__contact {
     color: $decorative-color-two;
     font-family: Roboto;
@@ -115,21 +114,27 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
     &:hover {
       color: $decorative-color;
+      .header__icon {
+        fill: $decorative-color;
+      }
     }
     &:focus {
       color: $decorative-color;
     }
   }
+}
 
 .header-container {
   border-bottom: solid #ececec;
   padding-bottom: 56px;
   height: 1px;
 }
-
 
 @keyframes move-logo {
   0% {
@@ -150,5 +155,6 @@
     transform: scaleX(1);
   }
 }
-    
-
+.current{
+  color: $decorative-color;
+}

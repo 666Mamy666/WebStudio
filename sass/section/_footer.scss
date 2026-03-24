@@ -7,7 +7,7 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: baseline;
   }
   &__box {
     display: flex;
@@ -102,9 +102,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.10);
 }
 &__icon {
   width: 20px;
@@ -132,7 +133,7 @@
   line-height: 100%;
   letter-spacing: 3%;
   text-transform: uppercase;
-  color: var(--text-color);
+  color: $text-color;
   margin-bottom: 20px;
 }
 
@@ -140,8 +141,10 @@
   width: 358px;
   height: 50px;
   border-radius: 4px;
-  border-width: 1px;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
+  padding-left: 16px;
 }
 &__btn {
   width: 200px;
@@ -160,6 +163,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: transparent;
 }
 &__svg {
   width: 24px;

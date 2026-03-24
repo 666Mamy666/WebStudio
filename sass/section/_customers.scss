@@ -28,6 +28,10 @@
 
     &:hover {
       border: 1px solid $decorative-color;
+
+    .customers__svg{
+      fill: $decorative-color;
+    }
     }
 
     &:focus-within {

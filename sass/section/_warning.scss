@@ -11,9 +11,8 @@
   &__item {
     width: 270px;
 
-    &:first-child::before {
-      background-image: url("../img/antenna.png");
-      background-size: 70px;
+&::before{
+  background-size: 70px;
       content: "";
       display: block;
       background-color: #f5f4fa;
@@ -22,52 +21,26 @@
       width: 100%;
       background-position: center;
       margin-bottom: 30px;
+}
+
+    &:first-child::before {
+      background-image: url("../img/antenna.png");
     }
 
     &:nth-child(2):before {
       background-image: url("../img/clock.png");
-      width: 70px;
-      height: 70px;
-      content: "";
-      display: block;
-      background-color: #f5f4fa;
-      height: 120px;
-      width: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-bottom: 30px;
     }
 
     &:nth-child(3):before {
       background-image: url("../img/diagram.png");
-      width: 70px;
-      height: 70px;
-      content: "";
-      display: block;
-      background-color: #f5f4fa;
-      height: 120px;
-      width: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-bottom: 30px;
     }
 
     &:last-child::before {
       background-image: url("../img/astronaut.png");
-      width: 70px;
-      height: 70px;
-      content: "";
-      display: block;
-      background-color: #f5f4fa;
-      height: 120px;
-      width: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-bottom: 30px;
     }
   }
   &__subtitle {
-    color: $background-color;
+    color: $subtitle-color;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;

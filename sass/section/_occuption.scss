@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 
   &__title {
-    color: $background-color;
+    color: $subtitle-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -14,15 +14,15 @@
     display: flex;
     gap: 30px;
   }
+  &__item {
+ position: relative;
+  }
   &__photo {
     display: block;
     width: 370px;
   }
 
   &__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
@@ -30,10 +30,13 @@
     text-transform: uppercase;
     color: $text-color;
     background-color: rgba(47, 48, 58, 80%);
-    width: 370px;
-    height: 70px;
-    opacity: 1;
-    position: relative;
-    bottom: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    
   }
 }
