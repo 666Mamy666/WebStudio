@@ -1,13 +1,15 @@
 @use "../base/var" as *;
+@use "../utils/mixin" as *;
 .footer {
   background-color: $background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: baseline;
+    @include flex-box($align:baseline);
   }
   &__box {
     display: flex;
@@ -48,7 +50,7 @@
 }
 
 &__text {
-  color: rgba(255, 255, 255, 0.6);
+  color: $footer-text-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -76,9 +78,10 @@
   height: 44px;
   border-radius: 50%;
   background-color: $decorative-color-two;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-property: background-color;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitions($property:background-color);
 
   &:hover {
   background-color: $decorative-color;
@@ -99,21 +102,23 @@
 }
 
 &__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include flex-box();
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.10);
+  background-color: $footer-link-color;
 }
 &__icon {
   width: 20px;
   height: 20px;
   fill: $background-color-two;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-property: fill;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitions($property:fill);
 
   &:hover {
   background-color: $decorative-color;
@@ -142,7 +147,7 @@
   height: 50px;
   border-radius: 4px;
   border: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid $footer-lable-color;
   background-color: transparent;
   padding-left: 16px;
 }
@@ -160,9 +165,10 @@
   color: $text-color;
   margin-left: 12px;
   margin-top: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include flex-box();
   border: transparent;
 }
 &__svg {

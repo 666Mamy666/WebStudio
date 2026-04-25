@@ -1,4 +1,5 @@
 @use "../base/var" as *;
+@use "../utils/mixin" as *;
 .posters {
   padding-bottom: 94px;
 
@@ -12,15 +13,16 @@
     border: 1px solid #eee;
     max-width: 370px;
     padding-bottom: 20px;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: box-shadow;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transitions($property:box-shadow);
 
     &:hover {
       box-shadow:
-        0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+        0px 3px 1px 0px $shadow-one,
+        0px 1px 2px 0px $shadow-two,
+        0px 2px 2px 0px $shadow-three;
 
         .posters__overlay{
    opacity: 1;
@@ -36,7 +38,7 @@
     left: 0;
     transform: translateY(100%);
     transition: transform 400ms ease;
-    background-color: rgba(33, 150, 243, 90%);
+    background-color: $overlay;
     padding-top: 63px;
     padding-bottom: 63px;
     padding-left: 24px;

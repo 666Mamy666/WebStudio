@@ -2,6 +2,8 @@
 @use"./base/reset"; 
 @use"./base/container";
 @use"./base/var";
+@use"./utils/placeholder";
+@use"./utils/mixin";
 @use"./section/header";                   
 @use"./section/hero";
 @use"./section/warning";
@@ -12,3 +14,4 @@
 @use"./section/chapter";
 @use"./section/posters";
 @use"./section/modal";
+

@@ -1,4 +1,5 @@
 @use "../base/var" as *;
+@use "../utils/mixin" as *;
 .modal {
   width: 528px;
   height: 581px;
@@ -13,15 +14,16 @@
   transition-duration: 1s;
 
   &__cross {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    @include flex-box();
     position: absolute;
     background-color: transparent;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid $shadow-one;
     right: 8px;
     top: 8px;
 
@@ -70,7 +72,7 @@
     height: 40px;
     opacity: 1;
     border-radius: 4px;
-    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline: 1px solid $shadow-one;
     border: none;
     margin-top: 4px;
     display: block;
@@ -96,7 +98,7 @@ fill: $decorative-color
     width: 448px;
     height: 120px;
     border-radius: 4px;
-    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline: 1px solid $shadow-one;
     margin-bottom: 20px;
     resize: none;
     border: none;
@@ -146,16 +148,16 @@ fill: $decorative-color
 
     &:hover {
       box-shadow:
-        0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+        0px 3px 1px 0px $shadow-one,
+        0px 1px 2px 0px $shadow-two,
+        0px 2px 2px 0px $shadow-three;
     }
 
     &:focus {
       box-shadow:
-        0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+        0px 3px 1px 0px $shadow-one,
+        0px 1px 2px 0px $shadow-two,
+        0px 2px 2px 0px $shadow-three;
     }
   }
 }
@@ -166,15 +168,17 @@ fill: $decorative-color
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $backdrop-color;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   pointer-events: none;
   z-index: 3;
-  transition-property: opacity;
-  transition-duration: 250ms;
+  // transition-property: opacity;
+  // transition-duration: 250ms;
+  @include transitions($property:opacity);
+
 }
 
 .is-hidden {

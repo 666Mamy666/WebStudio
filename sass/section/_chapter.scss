@@ -1,4 +1,5 @@
 @use "../base/var" as *;
+@use "../utils/mixin" as *;
 .chapter {
   padding-top: 94px;
   padding-bottom: 50px;
@@ -23,18 +24,19 @@
     padding-left: 22px;
     padding-right: 22px;
     cursor: pointer;
-    transition-property: background-color color box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: background-color color box-shadow;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transitions($property:(background-color, color, box-shadow));
   
   &:hover {
     border-radius: 4px;
     background-color: $decorative-color;
     color: $text-color;
     box-shadow:
-      0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-      0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-      0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+      0px 3px 1px 0px $shadow-one,
+      0px 1px 2px 0px $shadow-two,
+      0px 2px 2px 0px $shadow-three;
   }
 
   &:focus {
@@ -42,9 +44,9 @@
     background: $decorative-color;
     color: $text-color;
     box-shadow:
-      0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-      0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-      0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+     0px 3px 1px 0px $shadow-one,
+      0px 1px 2px 0px $shadow-two,
+      0px 2px 2px 0px $shadow-three;
   }
 }
 }

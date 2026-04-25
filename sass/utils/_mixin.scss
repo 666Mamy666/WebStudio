@@ -1,0 +1,13 @@
+@mixin transitions($property:color){
+      transition-property: $property;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin flex-box($justify:center, $align:center, $direction:row, $wrap:wrap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
