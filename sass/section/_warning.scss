@@ -64,6 +64,11 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+
+      @media screen and (min-width: 768px) {
+    text-align: start;
+    }
   }
 
   &__text {
