@@ -2,10 +2,13 @@
 @use"../utils/mixin" as *;
 @use "../utils/placeholder" as *;
 .team {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-  @extend %padding-section;
-  background-color: $background-color-two;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+   @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  padding-bottom: 94px;
+  }
 
   &__title {
     color: $subtitle-color;
@@ -18,6 +21,11 @@
   &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
   }
 
   &__item {
@@ -25,10 +33,25 @@
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 $backdrop-color, 0 1px 1px 0 $shadow-five, 0 1px 3px 0 $shadow-three;
     overflow: hidden;
+    width: 100%;
+
+     @media screen and (min-width: 768px) {
+    width: 354px;
+     }
+      @media screen and (min-width: 1200px) {
+    width: 270px;
+      }
   }
 
   &__peuple {
+    width: 100%;
+
+     @media screen and (min-width: 768px) {
+    width: 354px;
+     }
+      @media screen and (min-width: 1200px) {
     width: 270px;
+      }
   }
   &__info {
     padding-top: 30px;

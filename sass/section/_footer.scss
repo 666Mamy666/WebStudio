@@ -6,15 +6,41 @@
   padding-bottom: 60px;
 
   &__container {
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: baseline;
-    @include flex-box($align:baseline);
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     gap: 60px;
+     
+      @media screen and (min-width: 1200px) {
+      align-items: baseline;
+      gap: 93px;
+      }
   }
+ &__frame{
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  align-items: baseline;
+
+@media screen and (min-width: 768px) {
+   gap: 165px;
+   flex-direction: row;
+      }
+
+  @media screen and (min-width: 1200px) {
+      gap: 70px;
+      }
+ }
   &__box {
     display: flex;
     max-width: 231px;
     flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+      }
   }
   &__logo {
   color: $text-color;
@@ -44,6 +70,10 @@
 &__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+   @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+      }
 }
 &__item {
   margin-top: 9px;
@@ -56,20 +86,25 @@
   line-height: 24px;
   letter-spacing: 0.42px;
 }
-&__block {
-  margin-left: 70px;
-  margin-right: 93px;
-}
+// &__block{
+//   gap: 20px;
+// }
 &__title {
   color: $text-color;
   width: 116px;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+ text-align: center;
+ width: 100%;
+  
+    @media screen and (min-width: 1200px) {
+  text-align: left;
+      }
 }
 &__roster {
   display: flex;
   gap: 10px;
+  padding-top: 20px;
 }
 
 &__element {
@@ -127,6 +162,12 @@
 &__form {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+   @media screen and (min-width: 1200px) {
+    flex-direction: row;
+      }
 }
 &__wrapper {
   display: flex;
@@ -140,6 +181,12 @@
   text-transform: uppercase;
   color: $text-color;
   margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+      }
 }
 
 &__placeholder {
@@ -178,32 +225,3 @@
   margin-left: 10px;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

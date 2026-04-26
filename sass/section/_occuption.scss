@@ -1,6 +1,11 @@
 @use "../base/var" as *;
 .occupation {
   padding-bottom: 94px;
+  display: none;
+
+   @media screen and (min-width: 1200px) {
+   display: block;
+  }
 
   &__title {
     color: $subtitle-color;

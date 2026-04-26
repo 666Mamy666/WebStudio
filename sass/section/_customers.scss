@@ -1,20 +1,34 @@
 @use "../base/var" as *;
 @use "../utils/mixin" as *;
 .customers {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+      @media screen and (min-width: 1200px) {
+    padding-top: 94px;
   padding-bottom: 94px;
+      }
 
   &__title {
     font-weight: 700px;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 100%;
     letter-spacing: 3%;
     text-align: center;
     margin-bottom: 50px;
+
+      @media screen and (min-width: 1200px) {
+    font-size: 36px;
+      }
   }
   &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+
+      @media screen and (min-width: 1200px) {
+  flex-wrap: nowrap;
+  }
   }
   &__item {
     border: 1px solid $icon-color;
@@ -23,10 +37,15 @@
     padding-right: 32px;
     padding-bottom: 16px;
     padding-top: 16px;
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     // transition-property: border;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include transitions($property:border);
+
 
     &:hover {
       border: 1px solid $decorative-color;
@@ -47,6 +66,12 @@
     &:focus-within &__svg {
       fill: $decorative-color;
     }
+        @media screen and (min-width: 768px) {
+    width: 226px;
+      }
+          @media screen and (min-width: 1200px) {
+  width: 170px;
+      }
   }
   &__svg {
     width: 106px;
@@ -56,5 +81,6 @@
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include transitions($property:fill);
+    
   }
 }

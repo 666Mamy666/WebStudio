@@ -11,16 +11,15 @@
   &__list {
     display: flex;
     gap: 30px;
-    flex-direction: column;
+    flex-wrap: wrap;
 
      @media screen and (min-width: 1200px) {
-       flex-direction: row;
+       flex-wrap: nowrap;
     }
   }
   
 
   &__item {
-    width: 270px;
 
 &::before{
   background-size: 70px;
@@ -29,7 +28,8 @@
       background-color: $background-color-two;
       background-repeat: no-repeat;
       height: 120px;
-      width: 100%;
+      width: 100% !important;
+      max-width: 450px;
       background-position: center;
       margin-bottom: 30px;
 }
@@ -48,6 +48,14 @@
 
     &:last-child::before {
       background-image: url("../img/astronaut.png");
+    }
+
+     @media screen and (min-width: 768px) {
+    width: 354px;
+    }
+
+     @media screen and (min-width: 1200px) {
+    width: 270px;
     }
   }
   &__subtitle {
