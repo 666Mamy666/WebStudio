@@ -909,13 +909,33 @@ img {
 }
 
 .chapter {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .chapter {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .chapter {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 .chapter__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 8px;
+  max-width: 326px;
+}
+@media screen and (min-width: 768px) {
+  .chapter__list {
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: none;
+  }
 }
 .chapter__btn {
   color: #212121;
@@ -950,7 +970,12 @@ img {
 }
 
 .posters {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .posters {
+    padding-bottom: 94px;
+  }
 }
 .posters__list {
   display: flex;
@@ -959,11 +984,21 @@ img {
 }
 .posters__item {
   border: 1px solid #eee;
-  max-width: 370px;
   padding-bottom: 20px;
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .posters__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .posters__item {
+    max-width: 370px;
+  }
 }
 .posters__item:hover {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -1016,12 +1051,12 @@ img {
   overflow: hidden;
 }
 .posters__photo {
-  width: 370px;
+  width: 100%;
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   opacity: 1;
   border-radius: 4px;
   background-color: #ffffff;
@@ -1031,6 +1066,12 @@ img {
   transform: scale(0.2) rotate(0deg);
   transition-property: transform;
   transition-duration: 1s;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__cross {
   display: flex;
@@ -1109,7 +1150,7 @@ img {
   fill: #212121;
 }
 .modal__desire {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   outline: 1px solid rgba(0, 0, 0, 0.1);

@@ -1,7 +1,11 @@
 @use "../base/var" as *;
 @use "../utils/mixin" as *;
 .posters {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+
+   @media screen and (min-width: 1200px) {
+      padding-bottom: 94px;
+  }
 
   &__list {
     display: flex;
@@ -11,12 +15,21 @@
 
   &__item {
     border: 1px solid #eee;
-    max-width: 370px;
     padding-bottom: 20px;
+    width: 100%;
     // transition-property: box-shadow;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include transitions($property:box-shadow);
+
+      @media screen and (min-width: 768px) {
+      max-width: 354px;
+    
+  }
+
+    @media screen and (min-width: 1200px) {
+     max-width: 370px;
+  }
 
     &:hover {
       box-shadow:
@@ -74,6 +87,6 @@
     overflow: hidden;
   }
   &__photo {
-    width: 370px;
+    width: 100%;
   }
 }

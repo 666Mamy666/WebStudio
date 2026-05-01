@@ -1,14 +1,30 @@
 @use "../base/var" as *;
 @use "../utils/mixin" as *;
 .chapter {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+     @media screen and (min-width: 768px) {
+  padding-bottom: 30px;
+      }
+         @media screen and (min-width: 1200px) {
+    padding-top: 94px;
   padding-bottom: 50px;
+      }
 
   &__list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
+    max-width: 326px;
+
+       @media screen and (min-width: 768px) {
+     justify-content: center;
+     flex-wrap: nowrap;
+     max-width: none;
   }
+}
   &__btn {
     color: $subtitle-color;
     text-align: center;
