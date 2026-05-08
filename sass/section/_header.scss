@@ -12,21 +12,18 @@
     padding-top: 24px;
     padding-bottom: 25px;
   }
-
+& .container{
+  display: flex;
+  align-items: center;
+}
   &__nav {
     // display: flex;
     // align-items: center;
     // justify-content: space-between;
     @include flex-box($justify: space-between);
+    
   }
-  &__wrapper {
-    display: flex;
-    gap: 87px;
 
-    @media screen and (min-width:1200){
-      gap: 92px;
-    }
-  }
   &__logo {
     color: $logo-color;
     font-family: Raleway;
@@ -40,10 +37,28 @@
     text-decoration: none;
     animation-name: move-logo;
     animation-duration: 1.5s;
+    margin-right: auto;
 
+     @media screen and (min-width: 768px) {
+      margin-right: 87px;
+    }
     @media screen and (min-width: 1200px) {
       font-size: 26px;
+      margin-right: 93px;
     }
+  }
+  &__btn{
+background-color: transparent;
+border: none;
+
+  @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__menu{
+    width: 40px;
+    height: 40px;
   }
   &__web {
     color: $decorative-color;
@@ -99,6 +114,7 @@
 
   &__list {
     display: none;
+    margin-left: auto;
 
     @media screen and (min-width: 768px) {
       display: flex;
